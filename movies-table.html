@@ -1,0 +1,265 @@
+<!doctype html>
+<html>
+
+<!-- Head Section is all nonvisible elements-->
+<head>
+
+    <!-- All inpage style goes here-->
+    <style>
+        :root {
+            --mainbg: #d8d8d8;
+            --headercolor: #ffffff;
+            --navcolor:#efe1f2;
+            --navtext: #ffffff;
+            --footercolor: #4a4b4a;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background: var(--headercolor);
+            padding: 1rem;
+        }
+        nav {
+            background: var(--navcolor);
+            color: var(--navtext);
+            padding: 1rem;
+        }
+        footer {
+            background: var(--footercolor);
+            color: var(--navtext);
+            padding: 1rem;
+            min-height: 12vh;
+        }
+        .container {
+            width: 100%;
+            margin: auto;
+            background: var(--mainbg);
+            min-height: 70vh;
+        }
+        table {
+            width: 90%;
+            margin: auto;
+            font-size: 1.5rem;
+            text-align: center;
+            border-collapse: collapse;
+        }
+        td {
+            padding: 1.5vh;
+        }
+        th {
+            background-color: var(--navcolor);
+            color: white;
+        }
+        table, tr, th, td{
+            border: 1px black solid;
+        }
+        tr:nth-child(even){
+            background-color: #de3737;
+        }
+        tr:nth-child(odd){
+            background-color: #f58b11;
+            color:white
+        }
+        tr:nth-child(1) {
+            background-color: slateblue;
+            color:white
+        }
+        body{
+            background-color: var(--mainbg);
+        }
+        img{
+            width:100%;
+            height: 100%;
+        }
+
+
+
+    </style>
+
+    <!-- All LINK tags go here-->
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tables Intro</title>
+
+</head>
+
+<!-- Body Section is all visible elements-->
+<body>
+
+    <header>
+        <h1>Tables Intro</h1>
+        <p>
+            Asifur Asif<br>
+            Web 2, 3rd Hour<br>
+            1/27/21
+        </p>
+    </header>
+    <nav>
+        Nav
+    </nav>
+    <!-- Main page body here. Use container or DIV -->
+    <div class="container">
+
+
+        <table>
+            <tr>
+                <th>Number</th>
+                <th>Movie/Show Name</th>
+                <th>Movie/Show Image</th>
+                <th>Release Date</th>
+                <th>Director</th>
+                <th>Brief Summary</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Dragon Ball Super Broly</td>
+                <td> <img src="https://s2.best-wallpaper.net/wallpaper/3840x2160/1905/Dragon-Ball-Super-Broly_3840x2160.jpg" alt="#"></td>
+                <td>December 14, 2018</td>
+                <td>Tatsuya Nagamine</td>
+                <td>Earth is at peace after The Tournament of Power but Goku continues to train, knowing there are ever-stronger forces in the universe. With the arrival of a Saiyan warrior named Broly, Goku and Vegeta face their most dangerous challenge yet.</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Naruto Shippuden</td>
+                <td> <img src="https://wallpaperaccess.com/full/7477566.jpg" alt="#"></td>
+                <td>February 15, 2007</td>
+                <td>Hayato Date</td>
+                <td>Naruto Shippuden is the second series of Naruto anime that follows the titular hero on his quest to become Hokage.</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Bleach</td>
+                <td> <img src="https://d.newsweek.com/en/full/1574816/bleach-20th-anniversary-anime-return.jpg?w=1600&h=900&l=77&t=26&q=88&f=f432836a16fc315859d9abc1259550b7" alt="#"></td>
+                <td>October 5, 2004</td>
+                <td>Shinsuke Sato</td>
+                <td>It follows the adventures of the hotheaded teenager Ichigo Kurosaki, who inherits his parents' destiny after he obtains the powers of a Soul Reaper—a death personification similar to the Grim Reaper—from another Soul Reaper, Rukia Kuchiki.</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>One Piece</td>
+                <td> <img src="https://wallpaperaccess.com/full/4006245.jpg" alt="#"></td>
+                <td>October 20, 1999</td>
+                <td>Goro Taniguch</td>
+                <td>The series focuses on Monkey D. Luffy, a young man made of rubber, whom, inspired by his childhood idol, the powerful pirate "Red Haired" Shanks, sets off on a journey from the East Blue Sea to find the mythical treasure, the One Piece, and proclaim himself the King of the Pirates.</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Demon Slayer:Mugen Train</td>
+                <td> <img src="https://images.wallpapersden.com/image/download/kimetsu-no-yaiba-mugen-train_bGxla2iUmZqaraWkpJRnamtlrWZpaWU.jpg" alt="#"></td>
+                <td>April 23, 2021</td>
+                <td>Haruo Sotozaki</td>
+                <td>A boy raised by boars, who wears a boar's head, boards the Infinity Train on a new mission with the Flame Pillar along with another boy who reveals his true power when he sleeps. Their mission is to defeat a demon who has been tormenting people and killing the demon slayers who oppose it.</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Attack on Titan</td>
+                <td> <img src="https://wallpaperaccess.com/full/3789958.png" alt="#"></td>
+                <td>April 7, 2013</td>
+                <td>Tetsurō Araki</td>
+                <td>It is set in a world where humanity lives inside cities surrounded by three enormous walls that protect them from the gigantic man-eating humanoids referred to as Titans; the story follows Eren Yeager, who vows to exterminate the Titans after a Titan brings about the destruction of his hometown</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Spider-Man:No Way Home</td>
+                <td> <img src="https://images.wallpapersden.com/image/download/spiderman-no-way-home-cool-fan-art_bGtpbm6UmZqaraWkpJRma2VlrW5lZQ.jpg" alt="#"></td>
+                <td>December 17, 2021</td>
+                <td>Jon Watts</td>
+                <td>With Spider-Man's identity now revealed, our friendly neighborhood web-slinger is unmasked and no longer able to separate his normal life as Peter Parker from the high stakes of being a superhero. When Peter asks for help from Doctor Strange, the stakes become even more dangerous, forcing him to discover what it truly means to be Spider-Man.</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Avengers Endgame</td>
+                <td> <img src="https://www.wallpapertip.com/wmimgs/12-127684_poster-avenger-end-game-hd.png" alt="#"></td>
+                <td>April 26, 2019</td>
+                <td>Joe and Anthony Russo</td>
+                <td>Adrift in space with no food or water, Tony Stark sends a message to Pepper Potts as his oxygen supply starts to dwindle. Meanwhile, the remaining Avengers -- Thor, Black Widow, Captain America and Bruce Banner -- must figure out a way to bring back their vanquished allies for an epic showdown with Thanos -- the evil demigod who decimated the planet and the universe.</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Central Intelligence</td>
+                <td> <img src="https://www.wallpaperflare.com/static/764/208/932/central-intelligence-dwayne-johnson-kevin-hart-central-wallpaper.jpg" alt="#"></td>
+                <td>June 10, 2016</td>
+                <td>Rawson Marshall Thurber</td>
+                <td>Bullied as a teen for being overweight, Bob Stone shows up to his high school reunion looking fit and muscular. While there, he finds Calvin Joyner, a fast-talking accountant who misses his glory days as a popular athlete. Stone is now a lethal CIA agent who needs Calvin's number skills to help him save the compromised U.S. spy satellite system. Together, the former classmates encounter shootouts, espionage and double-crosses while trying to prevent worldwide chaos.</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Jujutsu Kaisen</td>
+                <td> <img src="https://wallpapercave.com/wp/wp8921149.jpg" alt="#"></td>
+                <td>December 24, 2021</td>
+                <td>Sunghoo Park</td>
+                <td>Yuji Itadori, a kind-hearted teenager, joins his school's Occult Club for fun, but discovers that its members are actual sorcerers who can manipulate the energy between beings for their own use. He hears about a cursed talisman - the finger of Sukuna, a demon - and its being targeted by other cursed beings.</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>Black Clover</td>
+                <td> <img src="https://wallpapercave.com/wp/wp9648859.jpg" alt="#"></td>
+                <td>October 3, 2017</td>
+                <td>Ayataka Tanemura</td>
+                <td>Black Clover is a magic Shonen anime starring a protagonist with no magic power. Upon turning 15 Asta and his brother/rival Yuno go to receive their grimoire so that they may fulfill their shared dream: to become the Wizard King of the Clover Kingdom and prove that commoners and peasants can achieve great feats.</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>Spider-Man(2004)</td>
+                <td> <img src="https://images8.alphacoders.com/599/thumb-1920-599067.jpg" alt="#"></td>
+                <td>June 30, 2004</td>
+                <td>Sam Raimi</td>
+                <td>When a failed nuclear fusion experiment results in an explosion that kills his wife, Dr. Otto Octavius is transformed into Dr. Octopus, a cyborg with deadly metal tentacles. Doc Ock blames Spider-Man for the accident and seeks revenge. Meanwhile, Spidey's alter ego, Peter Parker, faces fading powers and self-doubt. Complicating matters are his best friend's hatred for Spider-Man and his true love's sudden engagement to another man.
+</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>The Dark Knight</td>
+                <td> <img src="https://www.teahub.io/photos/full/232-2326978_batman-the-dark-knight-rises.jpg" alt="#"></td>
+                <td>July 18, 2008</td>
+                <td>Christopher Nolan</td>
+                <td>With the help of allies Lt. Jim Gordon and DA Harvey Dent, Batman has been able to keep a tight lid on crime in Gotham City. But when a vile young criminal calling himself the Joker suddenly throws the town into chaos, the caped Crusader begins to tread a fine line between heroism and vigilantism.</td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>The Flash</td>
+                <td> <img src="https://images.wallpapersden.com/image/download/poster-of-the-flash_bWVrZmeUmZqaraWkpJRma2VlrW5lZQ.jpg" alt="#"></td>
+                <td>October 7, 2014</td>
+                <td>Kevin Patrick Smith</td>
+                <td>The series follows Barry Allen, portrayed by Grant Gustin, a crime scene investigator who gains super-human speed, which he uses to fight criminals, including others who have also gained superhuman abilities.</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>Noragami</td>
+                <td> <img src="https://wallpaperaccess.com/full/6895958.jpg" alt="#"></td>
+                <td>January 5, 2014</td>
+                <td>Kotaro Tamura</td>
+                <td>A minor god seeking to gain widespread worship teams up with a human girl he saved to gain fame, recognition and at least one shrine dedicated to him. A minor god seeking to gain widespread worship teams up with a human girl he saved to gain fame, recognition and at least one shrine dedicated to him.</td>
+            </tr>
+            
+        </table>
+    </div>
+
+
+
+
+
+    <footer>
+        Footer
+    </footer>
+
+
+
+
+
+
+
+    <!-- JavaScript Goes Here -->
+
+    
+
+
+
+
+
+</body>
+</html>
