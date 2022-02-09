@@ -7,9 +7,9 @@
     <!-- All inpage style goes here-->
     <style>
         :root {
-            --mainbg: Salmon;
+            --mainbg: LemonChiffon ;
             --headercolor: Ivory;
-            --navcolor:DarkSlateGray;
+            --navcolor:FireBrick;
             --navtext: #ffffff;
             --footercolor: #4a4b4a;
         }
@@ -69,14 +69,26 @@
             font-size: 1.25rem;
             width: 50%;
         }
+        textarea{
+            padding: .5rem;
+            margin: .5rem;
+            font-size: 1.25rem;
+            width: 50%;
+        }
         body{
-            background: Maroon;
+            background: Sienna ;
         }
         h3{
             color:white
         }
+        h2{
+            padding: .5rem;
+            margin: .5rem;
+            font-size: 1.25rem;
+            width: 50%;
+        }
         footer{
-            background: DarkSlateGray;
+            background: firebrick;
         }
         h1{
             text-align: center;
@@ -98,7 +110,7 @@
 <body>
 
     <header>
-        <h1>HTML Forms</h1>
+        <h1>Contact Forms</h1>
     </header>
     <nav>
         Nav
@@ -107,34 +119,32 @@
     <div class="container">
         <h3>Contact Information</h3>
         <form name="myform" action="#">
-            <label for="fname">First Name</label>
+            <label for="fname">* First Name</label>
             <input type="text" name="fname" placeholder="Enter First Name">
 
-            <label for="lname">Last Name:</label>
+            <label for="lname">* Last Name:</label>
             <input type="text" name="lname" placeholder="Enter Last Name">
 
-            <input type="submit" name="submit" value="Submit Form">
         </form>
 
         <form>
-            <label for="eaddress">Email Address:</label>
+            <label for="eaddress">* Email Address:</label>
             <input type="email" name="eaddress" placeholder="Enter Email Address">
 
-            <input type="submit" name="submit" value="Submit Email Address">
         </form>
 
         <form>
-            <label for="pnumber">Phone Number:</label>
+            <label for="pnumber">* Phone Number:</label>
             <input type="tel" name="pnumber" placeholder="Enter Phone Number">
 
-            <input type="submit" name="submit" value="Submit Phone Number">
         </form>
 
-        <form>
-            <label for="messages">Feedback would be appreciated !</label>
-            <input type="text" name="messages" placeholder="Give us Feedback !">
-
-            <input type="submit" name="submit" value="Submit Feedback">
+        <h2>Messages</h2>
+        
+        <form action="/action_page.php">
+          <textarea name="message" rows="6" cols="20">Send Us Feedback</textarea>
+          <br><br>
+          <input type="submit">
         </form>
         
 
