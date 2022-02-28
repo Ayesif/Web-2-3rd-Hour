@@ -1,0 +1,279 @@
+<!doctype html>
+<html>
+
+<!-- Head Section is all nonvisible elements-->
+<head>
+
+    <!-- All inpage style goes here-->
+    <style>
+        :root {
+            --mainbg: #d8d8d8;
+            --headercolor: #ffffff;
+            --navcolor:#b1f2d0;
+            --navtext: #ffffff;
+            --footercolor: #4a4b4a;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background: var(--headercolor);
+            padding: 1rem;
+        }
+        nav {
+            background: var(--navcolor);
+            color: var(--navtext);
+            padding: 1rem;
+        }
+        footer {
+            background: var(--footercolor);
+            color: var(--navtext);
+            padding: 1rem; 
+            min-height: 12vh;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            background: var(--mainbg);
+            min-height: 70vh;
+        }
+        table {
+            width: 70%;
+            margin: auto;
+            font-size: 1.5rem;
+            text-align: center;
+            border-collapse: collapse;
+        }
+        td {
+            padding: 1.5vh;
+        }
+        th {
+            background-color: var(--navcolor);
+            color: white;
+        }
+        table, tr, th, td{
+            border: 1px black solid;
+        }
+        tr:nth-child(even){
+            background-color: #76b393;
+        }
+        tr:nth-child(odd){
+            background-color: #a2d8e8;
+            color:white
+        }
+        tr:nth-child(1) {
+            background-color: slateblue;
+            color:white
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background: var(--headercolor);
+            padding: 1rem;
+        }
+        nav {
+            background: var(--navcolor);
+            color: var(--navtext);
+            padding: 1rem;
+        }
+        footer {
+            background: var(--footercolor);
+            color: var(--navtext);
+            padding: 1rem; 
+            min-height: 12vh;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            background: var(--mainbg);
+            min-height: 70vh;
+        }
+
+        label{
+            display: block;
+            font-size: 1.25rem;
+            padding: .5rem;
+        }
+        input[type=text] {
+            padding: .5rem;
+            margin: .5rem;
+            font-size: 1.25rem;
+            width: 50%;
+        }
+        input[type=submit] {
+            display: block;
+            padding: .5rem;
+            font-size: 1.25rem;
+            margin: .5rem;
+        }
+        input[type=email] {
+            padding: .5rem;
+            margin: .5rem;
+            font-size: 1.25rem;
+            width: 50%;
+        }
+        input[type=tel] {
+            padding: .5rem;
+            margin: .5rem;
+            font-size: 1.25rem;
+            width: 50%;
+        }
+        textarea{
+            padding: .5rem;
+            margin: .5rem;
+            font-size: 1.25rem;
+            width: 50%;
+        }
+        h3{
+            color:black
+        }
+        h2{
+            padding: .5rem;
+            margin: .5rem;
+            font-size: 1.25rem;
+            width: 50%;
+        }
+        h1{
+            text-align: center;
+        }
+
+
+
+    </style>
+
+    <!-- All LINK tags go here-->
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tables Intro</title>
+
+</head>
+
+<!-- Body Section is all visible elements-->
+<body>
+
+    <header>
+        <h1>Reviews</h1>
+        <p>
+            Asifur Asif<br>
+            Web 2, 3rd Hour<br>
+            2/28/22
+        </p>
+    </header>
+    <nav>
+        Nav
+    </nav>
+    <!-- Main page body here. Use container or DIV -->
+    <div class="container">
+
+
+        <table>
+            <tr>
+                <th>Hour</th>
+                <th>Teacher</th>
+                <th>Room</th>
+                <th>Class Name</th>
+            </tr>
+            <tr>
+                <td>1st Hour</td>
+                <td>Mr.Nelson</td>
+                <td>C-240</td>
+                <td>Computer Graphic Design II</td>
+            </tr>
+            <tr>
+                <td>2nd Hour</td>
+                <td>Ms.Koss</td>
+                <td>B-221</td>
+                <td>Technical Writing</td>
+            </tr>
+            <tr>
+                <td>3rd Hour</td>
+                <td>Mr.Meier</td>
+                <td>T-416</td>
+                <td>Web Design II</td>
+            </tr>
+            <tr>
+                <td>4th Hour</td>
+                <td>Mr.McDonell</td>
+                <td>D-255</td>
+                <td>Business Law</td>
+            </tr>
+            <tr>
+                <td>5th Hour</td>
+                <td>Mr.Meier</td>
+                <td>T-416</td>
+                <td>Computer Literacy</td>
+            </tr>
+            <tr>
+                <td>6th Hour</td>
+                <td>Mr.McDonell</td>
+                <td>D-255</td>
+                <td>Finacial Literacy</td>
+            </tr>
+        </table>
+    </div>
+    <div class="container">
+        <h3>Contact Information</h3>
+        <form name="myform" action="#">
+            <label for="fname">* First Name</label>
+            <input type="text" name="fname" placeholder="Enter First Name">
+
+            <label for="lname">* Last Name:</label>
+            <input type="text" name="lname" placeholder="Enter Last Name">
+
+        </form>
+
+        <form>
+            <label for="eaddress">* Email Address:</label>
+            <input type="email" name="eaddress" placeholder="Enter Email Address">
+
+        </form>
+
+        <form>
+            <label for="pnumber">* Student ID:</label>
+            <input type="tel" name="pnumber" placeholder="Enter Student ID">
+
+        </form>
+        <form>
+            <label for="subjectline">* Subject Line:</label>
+            <input type="text" name="Subject Line" placeholder="Enter Subject Line">
+
+        </form>
+
+        <h2>Messages</h2>
+        
+        <form action="/action_page.php">
+          <textarea name="message" rows="6" cols="20" placeholder="Send Us Feedback"></textarea>
+          <br><br>
+          <input type="submit">
+        </form>
+        
+
+
+
+
+    <footer>
+        Footer
+    </footer>
+
+
+
+
+
+
+
+    <!-- JavaScript Goes Here -->
+
+    
+
+
+
+
+
+</body>
+</html>
