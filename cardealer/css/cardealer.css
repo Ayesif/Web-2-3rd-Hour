@@ -281,7 +281,6 @@ footer {
   display:block;
   width:90%;
   margin:auto;
-  height:90%
 }
 .grid-item h3{
   grid-area: name;
