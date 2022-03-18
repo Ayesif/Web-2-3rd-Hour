@@ -3,11 +3,11 @@
     to{width: 100;height: 80vh;}
 }
 :root {
-    --mainbg: #d8d8d8;
+    --mainbg: white;
     --headercolor: #ffffff;
-    --navcolor:#001d3d;
+    --navcolor:#2b2928;
     --navtext: #ffffff;
-    --footercolor: #4a4b4a;
+    --footercolor: grey;
 }
 * {
     margin: 0;
@@ -42,7 +42,7 @@ nav li a{
     transition: padding .5s ease;
 }
 nav li a:hover{
-    background-color: lightyellow;
+    background-color: thistle;
     color: black;
     padding: 2.5vh 4vw;
 }
@@ -62,7 +62,7 @@ footer {
     height: 80vh;
     margin: auto;
     background: lightcyan;
-    background-image: url('../images/coverPhoto1.png');
+    background-image: url('../images/coverimage.png');
     background-position: center;
     background-size: cover;
     animation-name: grow;
@@ -95,7 +95,7 @@ footer {
     padding: 1.5rem;
     border-radius: 1rem;
     color: white;
-    background: darkgoldenrod;
+    background: rebeccapurple;
     font-size: 1.5rem;
     text-align: center;
     text-decoration: none;
@@ -113,7 +113,7 @@ footer {
     margin: 2vh 0;
 }
 .row-dark{
-    background-color: lightslategray;
+    background-color: lavenderblush;
 }
 .row .media{
     flex-basis: 40%;
@@ -163,7 +163,7 @@ footer {
 .car-item{
     width: 30%;
     margin: 1rem;
-    background: lightgrey;
+    background: thistle;
     overflow: hidden;
     border-radius: 12px;
 }
@@ -182,9 +182,9 @@ footer {
     left: 0;
     right: 0;
     background-color: rgba(0, 0, 0, .6);
-    color: white;
+    color: lightcoral;
     text-align: center;
-    font-size: 1.25rem;
+    font-size: 1.75rem;
     overflow: hidden;
     width: 100%;
     height: 0;
@@ -234,9 +234,9 @@ footer {
   bottom: 0;
   right: 0;
   background-color: rgba(0, 0, 0, .6);
-  color:white;
+  color:lightcoral;
   text-align: center;
-  font-size: 1.25rem;
+  font-size: 1.75rem;
   overflow:hidden;
   width: 0;
   height: 0;
