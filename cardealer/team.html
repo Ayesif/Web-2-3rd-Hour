@@ -76,7 +76,7 @@
       
       <div class="grid-item">
         <div class="grid-image">
-          <img src="https://i.redd.it/b7w4g7ba1bc61.png" alt="#">
+          <img onmouseover="replaceImage(0)" onmouseout="replaceImage(0)" src="https://i.redd.it/b7w4g7ba1bc61.png" data-image2="https://preview.redd.it/73sgcqcjt9g61.png?auto=webp&s=931ae9c0985fd99a9a83de765b4b61a7bbcef0f8" alt="#">
         </div>
         <h3>Anis Uddin</h3>
         <h4>Lot Manager</h4>
@@ -87,7 +87,7 @@
       </div><!-- close grid item-->
       <div class="grid-item">
         <div class="grid-image">
-          <img src="https://i.redd.it/v9ohqxc74hf61.png" alt="#">
+          <img onmouseover="replaceImage(1)" onmouseout="replaceImage(1)" src="https://i.redd.it/v9ohqxc74hf61.png" data-image2="https://preview.redd.it/73sgcqcjt9g61.png?auto=webp&s=931ae9c0985fd99a9a83de765b4b61a7bbcef0f8" alt="#">
         </div>
         <h3>Farhan Kabiri</h3>
         <h4>Automotive Sales Manager</h4>
@@ -98,7 +98,7 @@
       </div><!-- close grid item-->
       <div class="grid-item">
         <div class="grid-image">
-          <img src="https://i.redd.it/3poph4yy6gf61.png" alt="#">
+          <img onmouseover="replaceImage(2)" onmouseout="replaceImage(2)" src="https://i.redd.it/3poph4yy6gf61.png" data-image2="https://preview.redd.it/73sgcqcjt9g61.png?auto=webp&s=931ae9c0985fd99a9a83de765b4b61a7bbcef0f8" alt="#">
         </div>
         <h3>Abu Tashin</h3>
         <h4>Finance Manager</h4>
@@ -109,7 +109,7 @@
       </div><!-- close grid item-->
       <div class="grid-item">
         <div class="grid-image">
-          <img src="https://i.redd.it/9teqzn6ceaf61.jpg" alt="#">
+          <img onmouseover="replaceImage(3)" onmouseout="replaceImage(3)" src="https://i.redd.it/9teqzn6ceaf61.jpg" data-image2="https://preview.redd.it/73sgcqcjt9g61.png?auto=webp&s=931ae9c0985fd99a9a83de765b4b61a7bbcef0f8" alt="#">
         </div>
         <h3>Tanvir Ahmed</h3>
         <h4>Service Manager</h4>
@@ -183,6 +183,18 @@
     <footer>
         Footer
     </footer>
+    
+    <script>
+      function replaceImage(num) {
+        var element = document.getElementsByTagName('img')[num];
+        var originalImage = element.getAttribute('src');
+        var newImage = element.getAttribute('data-image2');
+        
+        element.setAttribute('src', newImage);
+        element.setAttribute('data-image2', originalImage);
+        //alert(newImage);
+      }
+    </script>
 
 
 
