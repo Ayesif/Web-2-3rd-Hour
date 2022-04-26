@@ -152,7 +152,7 @@
             <div class="card" id="card1">
                 <div class="card-body">
                     <p>
-                        Generic Card Text
+                        Here come the fireworks!
                     </p>
                 </div>
                 <div class="card-footer">
@@ -165,7 +165,7 @@
            <div class="card" id="card2">
             <div class="card-body">
                 <p>
-                    Generic Card Text
+                    Goldfish of doom!
                 </p>
             </div>
             <div class="card-footer">
@@ -178,7 +178,7 @@
         <div class="card" id="card3">
             <div class="card-body">
                 <p>
-                    Generic Card Text
+                    Time for a light show!
                 </p>
             </div>
             <div class="card-footer">
@@ -231,7 +231,7 @@
     
     <script>
       function changeBody(){
-        document.body.style.backgroundColor = "firebrick";
+        document.body.style.backgroundColor = "salmon";
       }
       
       function changeTitle() {
@@ -243,7 +243,7 @@
         const myContainer = document.getElementById("container");
         const myTitle = document.getElementById("pageHeader");
         
-        myContainer.style.backgroundColor = "firebrick";
+        myContainer.style.backgroundColor = "salmon";
         myTitle.style.color = "lightgoldenrodyellow";
       }
 
@@ -261,21 +261,21 @@
 
       function changeCardBody() {
           const cardBodies = document.querySelectorAll('.card-body');
-          cardBodies.forEach(cb => cb.style.backgroundColor = "firebrick")
+          cardBodies.forEach(cb => cb.style.backgroundColor = "peachpuff")
           cardBodies.forEach(cb => cb.style.fontSize = "20px")
-          cardBodies.forEach(cb => cb.innerHTML = "Fireworks")
-          cardBodies.forEach(cb => cb.style.minHeight = "50vh")
+          cardBodies.forEach(cb => cb.innerHTML = "Welcome to Naganohara! My name is Yoimiya — just let me know if you need anything! We have Kushikatsu, Egg Roll... Wait, no, we're not a restaurant. We make fireworks! Like these, see? Sparkling, crackling, little fireworks~")
+          cardBodies.forEach(cb => cb.style.minHeight = "30vh")
           
       }
       
       /*Part 3*/
       function changeCard(cardNumber) {
         const cards = document.querySelectorAll(".card");
-        cards[cardNumber].querySelector(".card-body").style.backgroundColor = "maroon";
-        cards[cardNumber].querySelector(".card-title").style.backgroundColor = "black";
+        cards[cardNumber].querySelector(".card-body").style.backgroundColor = "navajowhite";
+        cards[cardNumber].querySelector(".card-title").style.backgroundColor = "firebrick";
         cards[cardNumber].querySelector(".card-body").style.color = "white";
-        cards[cardNumber].querySelector(".card-body").innerHTML = "I changed #" + (cardNumber+1);
-        cards[cardNumber].querySelector(".card-title").innerHTML = "#" + (cardNumber+1) + " card title";
+        cards[cardNumber].querySelector(".card-body").innerHTML = "You wanna hear a story? Alright, alright. Sit here, and I shall tell you the story I'm most proud of — the story of the Naganohara family! You'll rarely ever hear me talk about something this serious, you know?" + (cardNumber+1);
+        cards[cardNumber].querySelector(".card-title").innerHTML = "#" + (cardNumber+1) + " Niwabi Fire-Dance";
       }
       
       function hideOneCard(cardNumber) {
